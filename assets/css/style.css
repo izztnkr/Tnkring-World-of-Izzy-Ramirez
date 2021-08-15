@@ -6,11 +6,11 @@
 :root {
     --primary-color: #ffffff;
     --secondary-color: #ff3e05;
-    --tertiary-color: #000000;
+    --tertiary-color: #c1c5c9;
   }
 
 body {
-    background-color: var(--tertiary-color);
+    background-color: olive;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -87,13 +87,47 @@ header nav ul li {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.hero img {
-    border-radius: 50%;
-    max-width: 15%;
-    height: auto;
-}
+/** Body **/
 
 main{
     display:flex
     flex-wrap: wrap
 }
+
+h2 {
+    color: var(--secondary-color)  
+}
+a {
+    color: var(--primary-color)
+}
+
+/** About me section styling start **/
+
+.About-Me{
+    display:flex;
+}
+
+.About-Me img {
+    border-radius: 50%;
+    max-width: 15%;
+    height: auto;
+}
+
+.About-Me p {
+    color: var(--primary-color);
+}
+
+/** About me section styling end **/
+
+/** My Work section styling start **/
+.My-Work{
+    display:flex;
+}
+.My-Work img {
+    width: 15%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/** My Work section styling start **/
