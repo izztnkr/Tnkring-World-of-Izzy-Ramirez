@@ -125,19 +125,33 @@ section h4 {
 footer{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    width: 70%;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 2%;
+    justify-content: center;
+
+    
 }
 footer ul {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    list-style: none;   
-    /* margin-bottom: 2%; */
-  
-    
+    list-style: none;
 }
+
+footer img {
+    width: 75%;
+}
+
+/* footer ul li a {
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+} */
+
+    /* list-style: none;    */
+    /* margin-bottom: 2%; *
 /** Footer styling end**/
 
 
@@ -193,30 +207,28 @@ p {
 }
 .About-Me p{
     padding-top: 5%;
+    width: 60%;
 }
 /** About me section styling end **/
 
 
 /** My Work section styling start **/
-.My-Work{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2%;
-
+.work-items {
+    width: 350px;
+    height: 575px;
+    margin: auto;
+    padding-left: 100px;
 }
-.My-Work div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
+.work-items a {
     justify-content: center;
-    align-items: center;
-    margin-bottom: 2%;
 
 }
+
 .My-Work img {
-    width: 25%;
+    width: 30%;
     margin-bottom: 2%;
     padding-top: 5%;
+    align-content: center;
 }
 /** My Work section styling end **/
 
