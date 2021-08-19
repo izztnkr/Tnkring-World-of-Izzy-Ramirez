@@ -11,27 +11,23 @@
     --fifth-color: #4384a9;
     --sixth-color:#7F182B;
     /* rgba primary color rgba(37, 45, 51, 0.5),
-        rgba secondary color rgba(100, 56, 58, 0.5),
+       rgba secondary color rgba(100, 56, 58, 0.5),
        rgba tertiary color rgba(226, 214, 214, 0.7),
        rgba fifth color rgba(67, 132, 169, 0.5), */
   }
 
 body {
-    background-image: url("../images/ornamente-vintage-kunst-alt.jpg");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: local;
+    background-image: url("../images/ornamente-vintage-kunst-alt.jpg");
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
-/* 
-h1 {
-    justify-content: center;
-} */
 
 /** Header and Nav Bar styling start**/
 header{
@@ -93,55 +89,41 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    /* text-align: justify; */
     height: 100px;
     margin-top: 3%;
     background-image: url(../images/cropped_ornamente-vintage-kunst-alt_2.jpg);
     background-size: cover;
     background-attachment: local;
-    width: 60%;
-    /* background-color: rgba(114,67,92,0.9); */
+    width: 38%;
     border-radius: 25px;
-    /* background-color: #72435C;
-    opacity: 0.3; */
-    
-    /* width: 50%; */
 
 }
 
 section h3 {
     font-style: italic;
     font-weight: lighter;
-    /* font-size: 30px; */
     color: var(--tertiary-color);
     background-color:rgba(67, 132, 169, 0.9);
     text-shadow: 0 0 10px rgba(67, 132, 169, 0.9);
     border-radius: 10px;
-    /* text-shadow: 0 0 10px rgb(174, 226, 205); */
+    line-break: normal;
+    
 } 
 
 section p {
     font-weight: normal;
-    /* font-size: 30px; */
     color: var(--tertiary-color);
     background-color:rgba(67, 132, 169, 0.9);
     text-shadow: 0 0 10px rgba(67, 132, 169, 0.9);
     border-radius: 10px;
     margin-top: 5px;
+    line-break: normal;
+    
 
 }
 
-.hero {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
-
-    /**background-attachment: fixed;
-    background-position: 80%; 
-    top:90px; **/
-} 
 /** Hero styling end**/
 
 /** Footer styling start**/
@@ -149,7 +131,7 @@ footer{
     display:flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width:85%;
+    width:70%;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 2%;
@@ -170,27 +152,7 @@ footer ul {
 footer img {
     width: 75%;
 }
-
-/* footer ul li a {
-    align-items: center;
-    align-content: space-between;
-    justify-content: center;
-} */
-
-    /* list-style: none;    */
-    /* margin-bottom: 2%; *
-/** Footer styling end**/
-
-
-/** Body styling start **/
-
-/* main{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-
-} */
+ /** Footer styling end**/
 
 .content{
     display: flex;
@@ -222,6 +184,7 @@ a {
 p {
     color: var(--primary-color);
     font-weight:bolder;
+    line-break: auto
 }
 .content {
     align-items: center;
@@ -259,19 +222,27 @@ p {
     text-align: center;
     background-color:rgba(226, 214, 214, 0.9);
     border-radius: 15px;
+    line-break: auto;
 }
 /** About me section styling end **/
 
 
 /** My Work section styling start **/
+/* .My-Work{
+    display: flex;
+    flex-wrap: wrap;
+} */
 .work-items {
-    
+    /* display: flex;
+    flex-wrap: wrap; */
     width: 350px;
     height: 575px;
     margin: auto;
     padding-left: 100px;
 }
 .work-items a {
+    /* display: flex;
+    flex-wrap: wrap; */
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -297,14 +268,6 @@ p {
     justify-content: center;
 
 }
-/* .Get-in-Touch ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    list-style: none;   
-    align-items: flex-end; 
-    margin-bottom: 2%;
-} */
 
 .Get-in-Touch a img{
    width: 65%;
@@ -315,8 +278,93 @@ p {
 /** Get in Touch styling end *
 
 
-
 /** Breakpoints styling start 
-mobile: 
-background-attachment: fixed;
+
+/* MEDIA QUERY FOR QUERY FOR TABLETS AND SMALLER  */
+/* this will be applied on any screen smaller than 835px  needs hamburger style menu and percentage adjustment of body flex boxes */
+
+@media screen and (max-width: 835px) {
+    body {
+        background-image: url(../images/cropped_ornamente-vintage-kunst-alt_2.jpg);
+    }
+    
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+/* this will be applied on any screen smaller than 575px  needs hamburger style menu and percentage adjustment of body flex boxes*/
+@media screen and (max-width: 575px) {
+    header h1 {
+      color: tomato;
+    }
+
+    /* hero styling */
+    section {
+        align-items: center;
+        height: 100px;
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+    section h3 {
+        font-size: 130%;
+    
+    } 
+    
+    section p {
+        font-size: 130%;
+       
+    
+    }
+
+    main div {
+        width: 80%;
+    }
+    .content{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center
+        
+    }
+
+    /* about me style start */
+    .About-Me div {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 2%;
+    }
+    .About-Me h2{
+        font-style: italic;
+        justify-content: center;
+        text-shadow: 0 0 10px rgba(226, 214, 214, 0.9);
+    }
+    .About-Me img {
+        border-radius: 50%;
+        max-width: 70%;
+        height: auto;
+    }
+    .About-Me p{
+        padding-top: 2%;
+        width: 100%;
+        font-style: bold;
+        text-align: center;
+        background-color:rgba(226, 214, 214, 0.9);
+        border-radius: 15px;
+        line-break: auto;
+    }
+    .work-items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
+        height: 575px;
+        margin: auto;
+        padding-left: 100px;
+    }
+  }
 /** Breakpoints styling end **/
