@@ -45,49 +45,67 @@ header h1 {
     text-shadow: 0 0 20px rgba(67, 132, 169, 0.9);
     height: 40px;
 }
-.Izzy {
+/* .Izzy {
     color: var(--tertiary-color);
     font-style: italic;
     font-weight: bolder;
     text-shadow: 0 0 10px rgba(37, 45, 51, 0.7);
-}
+ } */
 
-#hamnav {
+.nav {
+    height: 75px;
     width: 75%;
-    background: rgba(67, 132, 169, 0.7);
+    background-color:  rgba(67, 132, 169, 0.9);
+    position: sticky;
+    top: 0px;
     border-radius: 10px;
 }
+.nav .nav-header {
+    display: inline-block;
 
-#hamitems { 
-    display: flex; 
 }
-
-#hamitems a {
-    flex-grow: 1;
-    flex-basis: 0;
-    padding: 10px;
+.nav .nav-header  .nav-title {
+    display: inline-block;
     color: var(--tertiary-color);
-    text-decoration: none;
-    text-align: center;
+    font-style: italic;
+    font-weight: bolder;
+    text-shadow: 0 0 10px rgba(37, 45, 51, 0.7); 
+    font-size:  40px;
+    padding: 10px 10px 10px 100px;
 }
-
-#hamitems a:hover { 
+.nav  .nav-links {
+    display: inline;
+    float:right;
+    font-size: 22px;
+}
+   
+.nav  .nav-links  a {
+    display: inline-block;
+    padding: 20px 10px 10px 10px;
+    text-decoration: none;
+    font-weight:  40px;
+    font-size: 20px;
+    color: var(--tertiary-color);
+}
+   
+.nav  .nav-links  a:hover {
     background: var(--tertiary-color);
     color: var(--primary-color);
-    border-radius: 5px;
-    text-shadow: none; 
+    border-radius: 50%;
+    text-shadow: none;
 }
 
-#hamitems a:active { 
-    background: var(--tertiary-color);
-    color: var(--sixth-color);
-    border-radius: 5px;
+.nav .nav-links a:active { 
+    background: var(--sixth-color);
+    color: var(--tertiary-color);
+    border-radius: 50%;
     text-shadow: none; 
 }
 
 /* (C) HIDE HAMBURGER */
-#hamnav label, #hamburger { 
-    display: none; 
+.nav > .nav-btn,
+.nav > #nav-check {
+  display: none;
 }
 
 /** Nav Bar styling end**/
@@ -117,8 +135,7 @@ section h3 {
     background-color:rgba(67, 132, 169, 0.9);
     text-shadow: 0 0 10px rgba(67, 132, 169, 0.9);
     border-radius: 10px;
-    line-break: normal;
-    
+    line-break: normal;    
 } 
 
 section p {
@@ -129,9 +146,7 @@ section p {
     text-shadow: 0 0 10px rgba(67, 132, 169, 0.9);
     border-radius: 10px;
     margin-top: 5px;
-    line-break: normal;
-    
-
+    line-break: normal;    
 }
 
 /** Hero styling end**/
@@ -272,9 +287,12 @@ p {
     width: 70%;
     margin-bottom: 2%;
     background-color:rgba(226, 214, 214, 0.7) ;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
+.work-items div a {
+    text-decoration: none;
+}
 .work-items :hover {
     background: var(--tertiary-color);
     color: var(--sixth-color);
@@ -310,8 +328,7 @@ p {
 }
 .Get-in-Touch h3,{
     justify-content: center;
-    background-color:rgba(226, 214, 214, 0.7) ;
-
+    background-color:rgba(226, 214, 214, 0.7);
 }
 
 .Get-in-Touch a img{
@@ -319,6 +336,8 @@ p {
    border-radius: 100px;;
    height: 75px;
     
+}
+
 }
 .email-me :hover{
     color: var(--sixth-color);
@@ -341,14 +360,14 @@ p {
 /* This Media Query will be applied on any screen smaller than 835px aka Tablets*/
 
 @media screen and (max-width: 835px) {
-    #hamitems a {
+    .hamitems a {
         box-sizing: border-box;
         display: block;
         width: 100%;
         border-top: 1px solid #333;
     }
       /* (B) SHOW HAMBURGER ICON */
-    #hamnav label { 
+    .hamnav label { 
         display: inline-block; 
         color: var(--tertiary-color);
         background:var(--sixth-color);
@@ -357,11 +376,11 @@ p {
         padding: 10px;
     }
       /* (C) TOGGLE SHOW/HIDE MENU */
-    #hamitems { 
+    .hamitems { 
         display: none; 
     }
-    #hamnav input:checked ~ #hamitems { 
-        display: block; 
+    .hamnav input:checked ~ #hamitems { 
+        display: inline-block; 
     }
     section p {
         font-size: 25px;
