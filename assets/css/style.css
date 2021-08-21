@@ -403,6 +403,15 @@ p {
 
 /* This Media Query will be applied on any screen smaller than 575px aka Phones and Smaller */
 @media screen and (max-width: 575px) {
+    .nav .nav-header .nav-title {
+        display: inline-block;
+        color: var(--tertiary-color);
+        font-style: italic;
+        font-weight: bolder;
+        text-shadow: 0 0 10px rgb(37 45 51 / 70%);
+        font-size: 30px;
+        padding: 10px 10px 10px 10px;
+    }
     section {
         display: flex;
         flex-wrap: wrap;
