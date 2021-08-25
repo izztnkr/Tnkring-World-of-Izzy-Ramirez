@@ -16,7 +16,6 @@ CSS
 
 ## Criteria
 
-A webpage meets accessibility standards:
 
 ~ When I load their portfolio then I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them.
 
