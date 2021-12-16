@@ -1,9 +1,24 @@
-# Tnkring-World-of-Izzy-Ramirez
-This is a mock portoflio for Izzy Ramirez's programming endeavors. The intent is to incorporate multiple elements of CSS & HTML including flexboxes, pseudo classes, <a>, images, giphs, pdfs, media queries, and styling. 
-## Built with:
-HTML
+<h1 align ="center"> Tnkring-World-of-Izzy-Ramirez </h1>
 
-CSS
+<h2 align="center">built with  &nbsp;&nbsp;
+
+  
+  CSS, ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) &nbsp;&nbsp;
+![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) &nbsp;&nbsp;
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) &nbsp;&nbsp;
+  
+</h2>
+
+## Table of Contents
+
+  * [Description](#description)
+  * [Preview](#preview)
+  * [Technical Criteria](#technical_criteria)
+  * [Contributions](#contributions)
+  * [Links](#links) 
+
+## Description
+This is a the full stack portfolio for Izzy Ramirez. The intent is to incorporate multiple elements of Bootstrap, CSS & HTML including flexboxes, pseudo classes, <a>, images, giphs, pdfs, media queries, and styling all the while providing a place to showcase this programmer's work.
 
 ## Preview
 
@@ -14,10 +29,10 @@ CSS
 ![image](https://user-images.githubusercontent.com/86173119/130307774-63509597-c845-456f-97e1-ce256cf8f6d6.png)
 
 
-## Criteria
+## Technical_Criteria
 
 
-- When I load their portfolio then I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them.
+- When I load the portfolio then I am presented with the developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them.
 - When I click one of the links in the navigation the UI scrolls to the corresponding section.
 - When I click on the link to the section about their work then the UI scrolls to a section with titled images of the developer's applications.
 - When I am presented with the developer's first application then that application's image should be larger in size than the others.
@@ -31,5 +46,7 @@ CSS
 - Created HTML, CSS, from scratch.
 - All images are being used under the Creative Commons License.
 
- ## Link to deployed application
- https://izztnkr.github.io/Tnkring-World-of-Izzy-Ramirez/
+ ## Links
+ 
+ [Link to deployed application](https://izztnkr.github.io/Tnkring-World-of-Izzy-Ramirez/)
+
