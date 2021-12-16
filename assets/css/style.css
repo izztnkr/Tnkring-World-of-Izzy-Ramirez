@@ -18,7 +18,7 @@
   }
 
 body {
-    background-image: url("../images/cropped_ornamente-vintage-kunst-alt_2.jpg");
+    background-image: url("../images/potential_images/");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,6 +30,15 @@ body {
     align-items: center;
 }
 
+<!-- Background image -->
+<div
+  class="bg-image"
+  style="
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg');
+    height: 100vh;
+  "
+></div>
+<!-- Background image -->
 /** Header and Nav Bar styling start**/
 header h1 {
     font: weight 60px;
