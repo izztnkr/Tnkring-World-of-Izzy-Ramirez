@@ -18,7 +18,7 @@
   }
 
 body {
-    background-image: url("../images/potential_images/");
+    background-image: url("https://images.pexels.com/photos/4273097/pexels-photo-4273097.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -30,15 +30,6 @@ body {
     align-items: center;
 }
 
-<!-- Background image -->
-<div
-  class="bg-image"
-  style="
-    background-image: url('https://mdbcdn.b-cdn.net/img/new/standard/city/041.jpg');
-    height: 100vh;
-  "
-></div>
-<!-- Background image -->
 /** Header and Nav Bar styling start**/
 header h1 {
     font: weight 60px;
